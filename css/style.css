@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.navbar-brand img{
+width: 100px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+        font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: rgb(22, 73, 140);
+}
+
+.btn-custom{
+ background-color: rgb(22, 73, 140);
+color: #fff !important;
+border-radius: 30px ;
+padding-right: 30px !important;
+padding-left: 30px !important;
+border: 1px solid rgb(22, 73, 140);
+ }
+
+.btn-custom:hover{
+	 background-color: rgba(22, 73, 140, 0);
+	 color: rgb(22, 73, 140) !important;
+}
+
+
+.banner {
+    background-color: #363738;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: #fff;
+    text-align: center;
+}
+.banner h3{
+	color: #15498B;
+	text-transform: capitalize;
+}
+
+.banner h1{
+	text-transform: uppercase;
+	font-size: 75px;
+	animation-name: color;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate; /* or: normal */
+    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation-fill-mode: forwards; /* or: backwards, both, none */
+}
+@keyframes color{
+	0%{
+		color: #fff;
+	}
+	50%{
+		color: orange;
+	}
+	100%{
+		color: red;
+	}
+}
+.banner .row{
+	min-height: 80vh;
+
+}
+.banner-btn{
+	animation-name: up-down;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes up-down{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+.banner-btn li{
+	padding: 0 10px;
+}
+.banner-btn a{
+/* background-color: rgb(255, 255, 255);*/
+color: #fff !important;
+border-radius: 30px ;
+padding-right: 30px !important;
+padding-left: 30px !important;
+border: 1px solid rgb(255, 255, 255);
+position: relative;
+font-weight: 600px;
+text-transform: uppercase;
+}
+
+
+.banner-btn a:hover{
+	background-color: #fff;
+	color: rgb(22, 73, 140) !important;
+}
+
+.banner-btn a::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -3px;
+	left: 0;
+	border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px ;
+}
+
+.banner-btn a:hover::before{
+		border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.about-bbq-section{
+	padding: 100px 0;
+}
+
+.about-bbq{
+	    text-align: center;
+}
+.about-bbq h1{
+	    color: #16498c;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-weight: 900;
+
+}
+.about-bbq h3{
+	    color: #535a69;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.about-bbq p{}
+
+
+.client{
+	padding: 100px 0;
+}
+
+
+.menu-section{
+	padding: 100px 0;
+}
+
+.menu-section h3{
+	    color: #000;
+    font-size: 20px
+}
+.menu-section h1{
+	    color: #16498c;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 0.8;
+}
+.menu-section p{}
+.menu-section img{
+	border-radius: 50%;
+}
+
+
+.happy-hour-section{
+	    background-color: #363738;
+    background-image: url(../images/drink.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: #fff;
+    text-align: center;
+}
+
+.happy-hour-section h3{
+	color: #15498B;
+	text-transform: capitalize;
+}
+
+.happy-hour-section h1{
+	text-transform: uppercase;
+	font-size: 75px;
+}
+.happy-hour-section .row{
+	min-height: 80vh;
+
+}
+.food{
+	    padding: 100px 0;
+    background-color: white;
+}
+.review  {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.review h1{
+	    text-transform: capitalize;
+    color: #16498c;
+}
+
+
+.review p {
+    font-size: smaller;
+    padding: 0 200px;
+    color: #7f878e;
+}
+
+.food ul li {
+    text-align: center;
+    padding: 0 10px;
+}
+.w-100 {
+    width: 100% !important;
+}
+.food ul li h2 {
+    font-size: large;
+    padding: 8px 0;
+}
+
+
+.banner-footer {
+    background-color: #363738;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: #fff;
+    text-align: center;
+}
+
+.banner-footer h1{
+	text-transform: capitalize;
+	font-size: 75px;
+}
+.banner-footer .row{
+	min-height: 80vh;
+
+}
+
+.banner-footer h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 35px;
+}
